@@ -89,6 +89,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let movie = movies![indexPath.row]
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
+        let releaseDate = movie["release_date"] as! String
+        cell.releaseDateLabel.text = releaseDate
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
         

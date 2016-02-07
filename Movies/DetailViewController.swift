@@ -15,21 +15,26 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var detailView: UIView!
+    @IBOutlet weak var releaseDateLabel: UILabel!
     
     var movie: NSDictionary!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: detailView.frame.origin.y + detailView.frame.size.height)
-        
         let title = movie["title"] as? String
         titleLabel.text = title
         
+        let releaseDate = movie["release_date"] as! String
+        releaseDateLabel.text = releaseDate
+        
         let detail = movie["overview"] as? String
         detailLabel.text = detail
-        
         detailLabel.sizeToFit()
+        let detailLabelHeight = detailLabel.frame.size.height
+        detailView.frame.size.height = detailLabelHeight + 16 + titleLabel.frame.size.height + releaseDateLabel.frame.size.height
+        
+        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: scrollView.frame.size.height + detailView.frame.size.height)
         
         let baseUrl = "http://image.tmdb.org/t/p/w500"
         if let posterPath = movie["poster_path"] as? String {
