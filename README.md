@@ -64,7 +64,7 @@ Finding guides for each aspect of required functionality and optional features.
 
 Movies is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **20** hours spent in total
 
 ## User Stories
 
@@ -81,7 +81,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Created Upcoming and Popular tabBarItems and viewControllers
+- [x] Created **Upcoming** and **Popular** tabBarItems and viewControllers
 - [x] Pulled Released Dates for each movie
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
