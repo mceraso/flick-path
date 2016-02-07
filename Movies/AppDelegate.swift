@@ -43,13 +43,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         popularViewController.endpoint = "popular"
         popularNavigationController.tabBarItem.title = "Popular"
         popularNavigationController.tabBarItem.image = UIImage(named: "User Groups-50")
-
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [nowPlayingNavigationController, upcomingNavigationController, popularNavigationController, topRatedNavigationController]
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+        
+        UITabBar.appearance().barTintColor = UIColor.blackColor()
+        UITabBar.appearance().tintColor = UIColor.blueColor()
         
         return true
     }

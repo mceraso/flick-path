@@ -26,19 +26,20 @@ class DetailViewController: UIViewController {
         titleLabel.text = title
         
         let releaseDate = movie["release_date"] as! String
-        releaseDateLabel.text = releaseDate
+        releaseDateLabel.text = "Release Date: \(releaseDate)"
         
         let detail = movie["overview"] as? String
         detailLabel.text = detail
         detailLabel.sizeToFit()
         let detailLabelHeight = detailLabel.frame.size.height
-        detailView.frame.size.height = detailLabelHeight + 16 + titleLabel.frame.size.height + releaseDateLabel.frame.size.height
+        detailView.frame.size.height = detailLabelHeight + 24 + titleLabel.frame.size.height + releaseDateLabel.frame.size.height
+        detailView.layer.cornerRadius = 20
         
         scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: scrollView.frame.size.height + detailView.frame.size.height)
         
-        let baseUrl = "http://image.tmdb.org/t/p/w500"
+        let baseUrlHiRes = "https://image.tmdb.org/t/p/original"
         if let posterPath = movie["poster_path"] as? String {
-            let imageUrl = NSURL(string: baseUrl + posterPath)
+            let imageUrl = NSURL(string: baseUrlHiRes + posterPath)
             imageView.setImageWithURL(imageUrl!)
         }
 

@@ -68,7 +68,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        /*tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)*/
     }
     
     override func didReceiveMemoryWarning() {
@@ -90,13 +89,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
         let releaseDate = movie["release_date"] as! String
-        cell.releaseDateLabel.text = releaseDate
+        cell.releaseDateLabel.text = "Release Date: \(releaseDate)"
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
         
-        let baseUrl = "http://image.tmdb.org/t/p/w500"
+        let baseUrlLowRes = "http://image.tmdb.org/t/p/w500"
         if let posterPath = movie["poster_path"] as? String {
-        let imageUrl = NSURL(string: baseUrl + posterPath)
+        let imageUrl = NSURL(string: baseUrlLowRes + posterPath)
         cell.posterView.setImageWithURL(imageUrl!)
         }
                 
