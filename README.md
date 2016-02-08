@@ -105,6 +105,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+-I had difficulty in creating the pink separator accents. setting left=0 did not have the separator begin on the far left of screen. managed to fix issue by setting both left and right to width of movieCell }
+
 ## License
 
     Copyright [yyyy] [name of copyright owner]
