@@ -92,6 +92,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 3. Collection view?
 4. Infinite scrolling?
 5. How do you animate the entrance of a view? Fade in the poster views?
+6. How do you programatically change the color of the unselected tabIcon?
 
 ## Video Walkthrough 
 
