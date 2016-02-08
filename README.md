@@ -19,7 +19,7 @@ The following **optional** features are implemented:
 - [ ] Movies are displayed using a CollectionView instead of a TableView.
 - [ ] User can search for a movie.
 - [ ] All images fade in as they are loading.
-- [ ] Customize the UI.
+- [x] Customize the UI.
 
 The following **additional** features are implemented:
 
@@ -28,7 +28,6 @@ The following **additional** features are implemented:
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1. What inspires you to go beyond the required functionality to complete the optional features? How do you learn how to implement features that aren't explicitly taught?
-2. 
 
 ## Video Walkthrough 
 
@@ -64,35 +63,41 @@ Finding guides for each aspect of required functionality and optional features.
 
 Movies is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **20** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] User can view movie details by tapping on a cell.
-- [ ] User can select from a tab bar for either **Now Playing** or **Top Rated** movies.
-- [ ] Customize the selection effect of the cell.
+- [x] User can view movie details by tapping on a cell.
+- [x] User can select from a tab bar for either **Now Playing** or **Top Rated** movies.
+- [x] Customize the selection effect of the cell.
 
 The following **optional** features are implemented:
 
-- [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
-- [ ] Customize the navigation bar.
+- [x] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
+- [x] Customize the navigation bar.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Created **Upcoming** and **Popular** tabBarItems and viewControllers
+- [x] Pulled Released Dates for each movie
+- [x] Customized Table View and Detail View
+- [x] Adjusted Table View Cell Size so that Aspect Ratio is the same as the original movie poster
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. How could we implement a search bar?
+2. Network error?
+3. Collection view?
+4. Infinite scrolling?
+5. How do you animate the entrance of a view? Fade in the poster views?
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/etsFnQj.gif?1' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
