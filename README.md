@@ -28,7 +28,6 @@ The following **additional** features are implemented:
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1. What inspires you to go beyond the required functionality to complete the optional features? How do you learn how to implement features that aren't explicitly taught?
-2. 
 
 ## Video Walkthrough 
 
@@ -83,17 +82,22 @@ The following **additional** features are implemented:
 
 - [x] Created **Upcoming** and **Popular** tabBarItems and viewControllers
 - [x] Pulled Released Dates for each movie
+- [x] Customized Table View and Detail View
+- [x] Adjusted Table View Cell Size so that Aspect Ratio is the same as the original movie poster
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. How could we implement a search bar?
+2. Network error?
+3. Collection view?
+4. Infinite scrolling?
+5. How do you animate the entrance of a view? Fade in the poster views?
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://http://i.imgur.com/ixAJywL.mp4' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
